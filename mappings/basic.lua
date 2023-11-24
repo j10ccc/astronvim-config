@@ -1,6 +1,15 @@
 local basic = { }
 
 basic.n = {
+  ["<leader>c"] = false,
+  ["<leader>C"] = false,
+  ["<leader>e"] = false,
+  ["<leader>h"] = false,
+  ["<leader>n"] = false,
+  ["<leader>o"] = false,
+  ["<leader>Q"] = false,
+  ["<leader>q"] = false,
+
   ["<C-u>"] = { "9k", desc = "Move up cursor 9 lines" },
   ["<C-d>"] = { "9j", desc = "Move down cursor 9 lines" },
   ["<C-q>"] = {

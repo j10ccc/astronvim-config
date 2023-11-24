@@ -1,0 +1,3 @@
+local basic = { }
+
+return basic

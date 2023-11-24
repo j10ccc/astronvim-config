@@ -29,6 +29,14 @@ basic.n = {
   ["<tab>l"] = {
     function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
     desc = "Next buffer",
+  },
+  ["<leader>w"] = {
+    function() require("hop").hint_char1({ current_line_only = true }) end,
+    desc = "Hop hint inline words"
+  },
+  ["<leader>W"] = {
+    function() require("hop").hint_words() end,
+    desc = "Hop hint screen words"
   }
 }
 

@@ -1,4 +1,4 @@
-# j10c's Nvim config
+# j10c's AstroNvim config
 
 My nvim config based on [AstroNvim](https://github.com/AstroNvim/AstroNvim).
 
@@ -48,5 +48,9 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 #### Clone this repository as user configuration, see more guidance in [AstroNvim doc](https://docs.astronvim.com/configuration/manage_user_config/)
 
 ```shell
-git clone https://github.com/j10ccc/neovim-config.git ~/.config/nvim/lua/user
+git clone https://github.com/j10ccc/astronvim-config.git ~/.config/nvim/lua/user
 ```
+
+## Keymappings
+
+See [custom keymappings](./mappings.md)

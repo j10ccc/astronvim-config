@@ -21,6 +21,11 @@ basic.n = {
   ["<C-j>"] = { "j" },
   ["<C-k>"] = { "k" },
 
+  ["sh"] = { "<C-w>h", desc = "Focus left" },
+  ["sl"] = { "<C-w>l", desc = "Focus right" },
+  ["sj"] = { "<C-w>j", desc = "Focus down" },
+  ["sk"] = { "<C-w>k", desc = "Focus up" },
+
   ["M"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
   ["<tab>h"] = {
     function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,

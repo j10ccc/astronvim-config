@@ -17,6 +17,8 @@ neo_tree_config.opts = function()
 
   -- Disable open in split window
   opts.window.mappings["s"] = false;
+  opts.window.position = "right"
+
   return opts
 end
 

@@ -42,7 +42,19 @@ basic.n = {
   ["<leader>W"] = {
     function() require("hop").hint_words() end,
     desc = "Hop hint screen words"
-  }
+  },
+
+  ["<leader>tf"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "1ToggleTerm float" },
+  ["<leader>th"] = { "<cmd>2ToggleTerm size=10 direction=horizontal<cr>", desc = "2ToggleTerm horizontal split" },
+  ["<leader>tv"] = { "<cmd>3ToggleTerm size=80 direction=vertical<cr>", desc = "3ToggleTerm vertical split" }
+}
+
+basic.t = {
+  ["<C-q>"] = { "<C-\\><C-n>"},
+  ["<C-h>"] = { "<Left>" },
+  ["<C-l>"] = { "<Left>" },
+  ["<C-j>"] = { "<Down>" },
+  ["<C-k>"] = { "<Up>" },
 }
 
 return basic

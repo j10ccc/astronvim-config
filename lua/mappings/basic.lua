@@ -1,6 +1,6 @@
-local basic = { }
+local module = {}
 
-basic.n = {
+module.n = {
   ["<leader>c"] = false,
   ["<leader>C"] = false,
   ["<leader>e"] = false,
@@ -13,8 +13,8 @@ basic.n = {
   ["<C-u>"] = { "9k", desc = "Move up cursor 9 lines" },
   ["<C-d>"] = { "9j", desc = "Move down cursor 9 lines" },
   ["<C-q>"] = {
-    function() require("astronvim.utils.buffer").close() end,
-    desc = "Close buffer"
+    function() require("astrocore.buffer").close() end,
+    desc = "Close buffer",
   },
   ["<C-h>"] = { "h" },
   ["<C-l>"] = { "l" },
@@ -28,33 +28,33 @@ basic.n = {
 
   ["M"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
   ["<tab>h"] = {
-    function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+    function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     desc = "Previous buffer",
   },
   ["<tab>l"] = {
-    function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+    function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
     desc = "Next buffer",
   },
   ["<leader>w"] = {
-    function() require("hop").hint_char1({ current_line_only = true }) end,
-    desc = "Hop hint inline words"
+    function() require("hop").hint_char1 { current_line_only = true } end,
+    desc = "Hop hint inline words",
   },
   ["<leader>W"] = {
     function() require("hop").hint_words() end,
-    desc = "Hop hint screen words"
+    desc = "Hop hint screen words",
   },
 
   ["<leader>tf"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "1ToggleTerm float" },
   ["<leader>th"] = { "<cmd>2ToggleTerm size=10 direction=horizontal<cr>", desc = "2ToggleTerm horizontal split" },
-  ["<leader>tv"] = { "<cmd>3ToggleTerm size=80 direction=vertical<cr>", desc = "3ToggleTerm vertical split" }
+  ["<leader>tv"] = { "<cmd>3ToggleTerm size=80 direction=vertical<cr>", desc = "3ToggleTerm vertical split" },
 }
 
-basic.t = {
-  ["<C-q>"] = { "<C-\\><C-n>"},
+module.t = {
+  ["<C-q>"] = { "<C-\\><C-n>" },
   ["<C-h>"] = { "<Left>" },
   ["<C-l>"] = { "<Left>" },
   ["<C-j>"] = { "<Down>" },
   ["<C-k>"] = { "<Up>" },
 }
 
-return basic
+return module

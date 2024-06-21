@@ -1,7 +1,5 @@
 # j10c's AstroNvim config
 
-My nvim config based on [AstroNvim](https://github.com/AstroNvim/AstroNvim).
-
 ## 🌟 Preview
 
 <div align="right">
@@ -32,24 +30,17 @@ My nvim config based on [AstroNvim](https://github.com/AstroNvim/AstroNvim).
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
+You can totally preserve your own configuration, and try mine directly in this way
 
 ```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
+git clone https://github.com/AstroNvim/template ~/.config/astronvim_j10c
+rm -rf ~/.config/astronvim_j10c/.git
+
+# Start nvim in the new environment, Lazy will load all of the plugins specified by AstroNvim.
+NVIM_APPNAME=astronvim_j10c nvim
 ```
 
-#### Clone AstroNvim repository as root configuration
-
-```shell
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Clone this repository as user configuration, see more guidance in [AstroNvim doc](https://docs.astronvim.com/configuration/manage_user_config/)
-
-```shell
-git clone https://github.com/j10ccc/astronvim-config.git ~/.config/nvim/lua/user
-```
+Alternatively, you can also backup your configuration and clone my repo to overwrite your `~/.config/nvim`.
 
 ## Keymappings
 

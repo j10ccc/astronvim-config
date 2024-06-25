@@ -1,14 +1,14 @@
 local module = {}
 
 module.n = {
-  ["<leader>c"] = false,
-  ["<leader>C"] = false,
-  ["<leader>e"] = false,
-  ["<leader>h"] = false,
-  ["<leader>n"] = false,
-  ["<leader>o"] = false,
-  ["<leader>Q"] = false,
-  ["<leader>q"] = false,
+  ["<Leader>c"] = false,
+  ["<Leader>C"] = false,
+  ["<Leader>e"] = false,
+  ["<Leader>h"] = false,
+  ["<Leader>n"] = false,
+  ["<Leader>o"] = false,
+  ["<Leader>Q"] = false,
+  ["<Leader>q"] = false,
 
   ["<C-u>"] = { "9k", desc = "Move up cursor 9 lines" },
   ["<C-d>"] = { "9j", desc = "Move down cursor 9 lines" },
@@ -44,9 +44,9 @@ module.n = {
     desc = "Hop hint before words",
   },
 
-  ["<leader>tf"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "1ToggleTerm float" },
-  ["<leader>th"] = { "<cmd>2ToggleTerm size=10 direction=horizontal<cr>", desc = "2ToggleTerm horizontal split" },
-  ["<leader>tv"] = { "<cmd>3ToggleTerm size=80 direction=vertical<cr>", desc = "3ToggleTerm vertical split" },
+  ["<Leader>tf"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "1ToggleTerm float" },
+  ["<Leader>th"] = { "<cmd>2ToggleTerm size=10 direction=horizontal<cr>", desc = "2ToggleTerm horizontal split" },
+  ["<Leader>tv"] = { "<cmd>3ToggleTerm size=80 direction=vertical<cr>", desc = "3ToggleTerm vertical split" },
 }
 
 module.t = {

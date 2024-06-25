@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-  "phaazon/hop.nvim",
+  "smoka7/hop.nvim",
   lazy = false,
   opts = function()
     return {

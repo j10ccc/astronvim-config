@@ -35,13 +35,13 @@ module.n = {
     function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
     desc = "Next buffer",
   },
-  ["<leader>w"] = {
-    function() require("hop").hint_char1 { current_line_only = true } end,
-    desc = "Hop hint inline words",
+  ["<Leader>w"] = {
+    function() require("hop").hint_char1 { require("hop.hint").HintDirection.AFTER_CURSOR } end,
+    desc = "Hop hint after words",
   },
-  ["<leader>W"] = {
-    function() require("hop").hint_words() end,
-    desc = "Hop hint screen words",
+  ["<Leader>b"] = {
+    function() require("hop").hint_char1 { require("hop.hint").HintDirection.BEFORE_CURSOR } end,
+    desc = "Hop hint before words",
   },
 
   ["<leader>tf"] = { "<cmd>1ToggleTerm direction=float<cr>", desc = "1ToggleTerm float" },

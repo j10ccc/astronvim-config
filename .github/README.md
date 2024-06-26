@@ -33,7 +33,7 @@
 You can totally preserve your own configuration, and try mine directly in this way
 
 ```shell
-git clone https://github.com/AstroNvim/template ~/.config/astronvim_j10c
+git clone https://github.com/j10ccc/astronvim-config.git ~/.config/astronvim_j10c
 rm -rf ~/.config/astronvim_j10c/.git
 
 # Start nvim in the new environment, Lazy will load all of the plugins specified by AstroNvim.
@@ -41,6 +41,11 @@ NVIM_APPNAME=astronvim_j10c nvim
 ```
 
 Alternatively, you can also backup your configuration and clone my repo to overwrite your `~/.config/nvim`.
+
+```shell
+mv ~/.config/nvim ~/.config/nvim.bak
+git clone https://github.com/j10ccc/astronvim-config.git ~/.config/nvim
+```
 
 ## Keymappings
 
